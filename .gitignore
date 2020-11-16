@@ -1,3 +1,2 @@
 log.lammps
-*.atoms
 *.restart.*
