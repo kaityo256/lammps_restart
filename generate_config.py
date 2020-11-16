@@ -63,4 +63,4 @@ def find_range(atoms):
 if __name__ == "__main__":
     a = get_atoms()
     find_range(a)
-    save_file("restart.atoms", a)
+    save_file("test.atoms", a)
