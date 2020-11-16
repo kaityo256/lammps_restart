@@ -1,0 +1,5 @@
+read_restart restart.restart.20000
+
+thermo_style custom step temp etotal
+thermo 1000
+run 20000

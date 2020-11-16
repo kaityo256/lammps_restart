@@ -32,9 +32,9 @@ def save_file(filename, atoms):
         f.write("Position Data\n\n")
         f.write("{} atoms\n".format(len(atoms)))
         f.write("1 atom types\n\n")
-        f.write("-40.00 40.00 xlo xhi\n")
-        f.write("-20.00 20.00 ylo yhi\n")
-        f.write("-20.00 20.00 zlo zhi\n")
+        f.write("0.0 6.00 xlo xhi\n")
+        f.write("0.0 6.00 ylo yhi\n")
+        f.write("0.0 6.00 zlo zhi\n")
         f.write("\n")
         f.write("Atoms\n\n")
         for i, a in enumerate(atoms):
@@ -60,7 +60,10 @@ def find_range(atoms):
     print(f"{min(z)} < z < {max(z)}")
 
 
-if __name__ == "__main__":
+def run():
     a = get_atoms()
     find_range(a)
     save_file("test.atoms", a)
+
+if __name__ == "__main__":
+    run()
